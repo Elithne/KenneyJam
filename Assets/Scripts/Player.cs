@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta; //Diferencia de movimiento
     private RaycastHit2D hit; //Para chequear si puedo moverme a ese lugar
-    public float moveSpeed = 5f;
 
     private void Start(){
         //Elegir el boxCollider que se va a guardar
