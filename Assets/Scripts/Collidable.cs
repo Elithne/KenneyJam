@@ -4,28 +4,38 @@ using UnityEngine;
 
 public class Collidable : MonoBehaviour
 {
-    public ContactFilter2D filter;
-    private BoxCollider2D boxCollider;
-    private Collider2D[] hits = new Collider2D[10]; //Maxima cantidad de elementos con las que vamos a registrar colisión
+    public ContactFilter2D filter; // Filtro para controlar qué objetos colisionarán con este objeto
+    private BoxCollider2D boxCollider; // Referencia al BoxCollider2D del objeto
+    private Collider2D[] hits = new Collider2D[10]; // Array para almacenar los colliders que colisionan con este objeto
 
-    protected virtual void Start() {
-        boxCollider = GetComponent<BoxCollider2D>(); //Requiere el collider2D del elemento con el que colisiona.
+    protected virtual void Start()
+    {
+        boxCollider = GetComponent<BoxCollider2D>(); // Obtener la referencia al BoxCollider2D del objeto
     }
 
-    protected virtual void Update() {
-        boxCollider.OverlapCollider(filter, hits); // toma nuestro filter y nuestro array para buscar algo que poner dentro dde él.
+    protected virtual void Update()
+    {
+        // Realizar una detección de colisiones utilizando el BoxCollider2D y el filtro especificado
+        boxCollider.OverlapCollider(filter, hits);
 
-        for (int i = 0; i < hits.Length; i++){
-            if(hits[i] == null){
+        // Iterar sobre los colliders que colisionan con este objeto
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i] == null)
+            {
                 continue;
             }
-                         
+
+            // Llamar a la función OnCollide() para manejar la colisión con el collider específico
             OnCollide(hits[i]);
             hits[i] = null;
         }
     }
 
-    protected virtual void OnCollide(Collider2D col){ //Si son virtual, se pueden modificar :D)
+    // Función virtual que se puede modificar en clases derivadas para manejar las colisiones
+    protected virtual void OnCollide(Collider2D col)
+    {
+        // muestra el nombre del objeto con el que colisionó
         Debug.Log(col.name);
     }
 }

@@ -23,7 +23,6 @@ public class PlayerGrabKey : MonoBehaviour
 
     public bool hasKey(){
         if(keys > 0){
-            Debug.Log("Tengo llave");
             return true;         
         } else{
             return false;
