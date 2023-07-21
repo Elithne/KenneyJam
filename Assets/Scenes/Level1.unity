@@ -12785,7 +12785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSprites: []
   player: {fileID: 703683657}
-  floatingTextManager: {fileID: 0}
+  floatingTextManager: {fileID: 287356402}
 --- !u!4 &1179050145
 Transform:
   m_ObjectHideFlags: 0
