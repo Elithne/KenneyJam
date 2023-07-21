@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta; //Diferencia de movimiento
     private RaycastHit2D hit; //Para chequear si puedo moverme a ese lugar
+    public float moveSpeed = 5f;
 
     private void Start(){
         //Elegir el boxCollider que se va a guardar
@@ -20,8 +21,8 @@ public class Player : MonoBehaviour
     private void FixedUpdate(){
         
         
-        float x = Input.GetAxisRaw("Horizontal"); //Devuelve -1, 0, 1
-        float y = Input.GetAxisRaw("Vertical"); //Devuelve -1, 0, 1
+        float x = Input.GetAxisRaw("Horizontal") * moveSpeed; //Devuelve -1, 0, 1
+        float y = Input.GetAxisRaw("Vertical") * moveSpeed; //Devuelve -1, 0, 1
 
         //Resetear moveDelta para que el personaje se quede quieto
         moveDelta = new Vector3(x,y,0);
