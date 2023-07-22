@@ -1193,7 +1193,6 @@ GameObject:
   - component: {fileID: 2114471438}
   - component: {fileID: 2114471437}
   - component: {fileID: 2114471436}
-  - component: {fileID: 2114471435}
   m_Layer: 0
   m_Name: ButtonController
   m_TagString: Untagged
@@ -1201,14 +1200,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2114471435
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114471434}
-  m_Enabled: 1
 --- !u!82 &2114471436
 AudioSource:
   m_ObjectHideFlags: 0
