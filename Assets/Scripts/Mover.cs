@@ -27,6 +27,9 @@ public abstract class Mover : Fighter
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
+        moveDelta += pushDirection;
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
+
         /*realiza una detección de colisiones utilizando una caja rectangular desde la posición actual del jugador, en la dirección vertical (moveDelta.y) con una distancia igual a la magnitud del movimiento vertical en un solo frame. Si encuentra un objeto con Layer Actor o Blocking, devuelve eso. Sino, devuelve null y se mueve.     
         En el inspector de capas, hay que desactivar Queries Start in Collider para que el jugador no colisione consigo mismo.*/
         hit = Physics2D.BoxCast(transform.position,boxCollider.size,  0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor","Blocking"));

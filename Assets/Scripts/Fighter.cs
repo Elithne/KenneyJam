@@ -33,6 +33,6 @@ public class Fighter : MonoBehaviour
     }
 
     protected virtual void Death(){
-        Debug.Log("dead");
+        //Debug.Log("dead");
     }
 }

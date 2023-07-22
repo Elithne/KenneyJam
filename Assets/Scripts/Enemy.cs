@@ -25,7 +25,9 @@ public class Enemy : Mover
     private void FixedUpdate(){
 
         if(Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght){
-            chasing = Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght;
+            if(Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght){
+                chasing = true;
+            }
             
             if(chasing){
                 if(!collidingWithPlayer){

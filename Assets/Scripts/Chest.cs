@@ -19,7 +19,7 @@ public class Chest : Collectable
 
             // Llamar a la función addKey() del componente PlayerGrabKey del jugador para agregar una llave
             playerGrabKey.addKey();
-            GameManager.instance.ShowText("Key obtained!", 25, Color.white, transform.position + chestOffset, Vector3.up * 50, 3.0f);
+            GameManager.instance.ShowText("Key obtained!", 25, Color.yellow, transform.position + chestOffset, Vector3.up * 50, 1.5f);
 
             collected = true; // Marcar el cofre como recogido para que no pueda ser recogido nuevamente
         }
