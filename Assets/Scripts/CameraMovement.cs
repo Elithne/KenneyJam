@@ -8,6 +8,9 @@ public class CameraMovement : MonoBehaviour
     public float boundX = 0.15f;
     public float boundY = 0.05f;
 
+    public void Start(){
+        lookAt = GameObject.Find("Player").transform;
+    }
     //Se llama luego del FixedUpdate, es para que la camara se mueva luego.
     private void LateUpdate(){
         Vector3 delta = Vector3.zero; //Diferencia entre un frame y el siguiente.
