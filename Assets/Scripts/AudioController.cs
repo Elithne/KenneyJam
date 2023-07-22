@@ -26,8 +26,10 @@ public class AudioController : MonoBehaviour
     public void OnMuteChanged()
     {
         // Actualiza el muteo del AudioListener cuando se cambia el valor del toggle
-        AudioListener.pause = muteToggle.isOn;
-        PlayerPrefs.SetInt("Mute", muteToggle.isOn ? 0 : 1);
-        Debug.Log("Mute");
+        bool isMuted = !muteToggle.isOn;
+
+    AudioListener.pause = isMuted;
+    PlayerPrefs.SetInt("Mute", isMuted ? 1 : 0); // Guarda el valor opuesto en PlayerPrefs
+    Debug.Log("Mute");
     }
 }
