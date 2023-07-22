@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    private Transform lookAt;
+    public Transform lookAt;
     public float boundX = 0.15f;
     public float boundY = 0.05f;
-
-    private void Start(){
-        lookAt = GameObject.Find("Player").transform;
-        }
 
     //Se llama luego del FixedUpdate, es para que la camara se mueva luego.
     private void LateUpdate(){
