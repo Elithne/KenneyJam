@@ -319,6 +319,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: fighter
       objectReference: {fileID: 0}
+    - target: {fileID: 7210885281479882730, guid: 1f993c4ac692653489d02c6932e458bb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8913889
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210885281479882730, guid: 1f993c4ac692653489d02c6932e458bb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.017875195
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457267680961137351, guid: 1f993c4ac692653489d02c6932e458bb, type: 3}
+      propertyPath: hitpoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457267680961137351, guid: 1f993c4ac692653489d02c6932e458bb, type: 3}
+      propertyPath: maxHitpoint
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55808,9 +55824,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3337906572080010089, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: chaseLenght
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337906572080010089, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: triggerLenght
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6395257553737211409, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
       propertyPath: m_Name
       value: Enemy Cyclops
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304148423739423310, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6932907
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304148423739423310, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0471859
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304148423739423310, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.011795044
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304148423739423310, guid: dd6fffbfd33410949ba20c8637695d7a, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.09437275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
