@@ -158,5 +158,4 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   openChest: {fileID: 1190725135, guid: 1294cea9ea661204bae369586d34e2d9, type: 3}
-  playerGrabKey: {fileID: -4354870207207232484, guid: 1f993c4ac692653489d02c6932e458bb, type: 3}
   coins: 5
