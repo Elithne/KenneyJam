@@ -11,9 +11,12 @@ public class Collectable : Collidable
         // Verificar si el objeto con el que colisionó tiene el nombre "Player"
         if (col.name == "Player")
         {
-            //GameManager.instance.ShowText("Press F", 25, Color.white, transform.position, Vector3.zero, 0.01f);
-            OnCollect(); // Llamar a la función OnCollect() para recoger el objeto
-        }
+            if (collected == false)
+			{
+				GameManager.instance.ShowText("Press F", 25, Color.white, transform.position, Vector3.zero, 0.01f);
+				OnCollect(); // Llamar a la función OnCollect() para recoger el objeto
+			}
+		}
     }
 
     protected virtual void OnCollect()
