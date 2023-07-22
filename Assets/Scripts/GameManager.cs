@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     }
 
     public List<Sprite> playerSprites;
-    public PlayerMovement player;
+    public Player player;
     public FloatingTextManager floatingTextManager;
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){

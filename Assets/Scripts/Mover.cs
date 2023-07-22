@@ -2,29 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class PlayerMovement : MonoBehaviour
+public abstract class Mover : Fighter
 {
-    
+    protected BoxCollider2D boxCollider;
+    protected Vector3 moveDelta;
+    protected RaycastHit2D hit; 
+    protected float moveSpeed = 5f;
 
-    private BoxCollider2D boxCollider;
-    private Vector3 moveDelta;
-    private RaycastHit2D hit; 
-    public float moveSpeed = 5f;
-
-    private void Start(){
+    protected virtual void Start(){
         
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    
-    private void FixedUpdate(){  
-        // Obtener la entrada del eje horizontal (izquierda/derecha) y vertical (arriba/abajo) del teclado
-        float x = Input.GetAxisRaw("Horizontal") * moveSpeed; 
-        float y = Input.GetAxisRaw("Vertical") * moveSpeed; 
 
+    protected virtual void UpdateMotor(Vector3 input){
         // Crear un vector que representa el movimiento deseado en el frame actual
-        moveDelta = new Vector3(x,y,0);
+        moveDelta = new Vector3(input.x*moveSpeed, input.y*moveSpeed, 0);
          
          // Cambiar la escala del jugador para voltearlo en la dirección del movimiento horizontal
                
@@ -50,7 +43,5 @@ public class PlayerMovement : MonoBehaviour
         if(hit.collider == null){
             transform.Translate(moveDelta.x * Time. deltaTime, 0, 0);
         }
-        
     }
-
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collectable : Collidable
 {
     protected bool collected; // Variable que indica si el objeto ha sido recogido o no
+    private Vector3 textOffset = new Vector3(0, 1.2f, 0);
 
     protected override void OnCollide(Collider2D col)
     {
@@ -13,7 +14,7 @@ public class Collectable : Collidable
         {
             if (collected == false)
 			{
-				GameManager.instance.ShowText("Press F", 25, Color.white, transform.position, Vector3.zero, 0.01f);
+				GameManager.instance.ShowText("Press F", 25, Color.white, transform.position + textOffset, Vector3.zero, 0.01f);
 				OnCollect(); // Llamar a la función OnCollect() para recoger el objeto
 			}
 		}

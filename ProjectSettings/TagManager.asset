@@ -6,6 +6,7 @@ TagManager:
   tags:
   - chest
   - door
+  - fighter
   layers:
   - Default
   - TransparentFX
