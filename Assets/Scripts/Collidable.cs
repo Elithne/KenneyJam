@@ -36,6 +36,8 @@ public class Collidable : MonoBehaviour
     protected virtual void OnCollide(Collider2D col)
     {
         // muestra el nombre del objeto con el que colisionó
-        Debug.Log(col.name);
+        if (col.name == "Player"){
+            Debug.Log(col.name);
+        }    
     }
 }

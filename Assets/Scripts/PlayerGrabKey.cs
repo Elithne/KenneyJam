@@ -10,18 +10,22 @@ public class PlayerGrabKey : MonoBehaviour
         keys = 0;
     }
 
-    public void addKey(){
+    public void AddKey(){
         keys++;
         Debug.Log(keys);
     }
 
-    public void removeKey(){
-        if(keys <= 0){
+    public int GetKeys(){
+        return keys;
+    }
+
+    public void RemoveKey(){
+        if(keys > 0){
             keys--;
         }       
     }
 
-    public bool hasKey(){
+    public bool HasKey(){
         if(keys > 0){
             return true;         
         } else{
