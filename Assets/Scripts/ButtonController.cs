@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MenuButtonController : MonoBehaviour
 {
@@ -91,5 +92,9 @@ public class MenuButtonController : MonoBehaviour
     {
         // Reproducir el sonido a través del componente AudioSource
         audioSource.PlayOneShot(clip);
+    }
+     public void OnButtonClick(int buttonIndex)
+    {
+        SelectButton(buttonIndex);
     }
 }
