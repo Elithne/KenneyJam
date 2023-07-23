@@ -426,6 +426,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
       propertyPath: playerGrabKey
       value: 
       objectReference: {fileID: 1497671980}
@@ -702,6 +706,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isClosed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3481999429446669258, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
       propertyPath: m_LocalPosition.x
       value: 70.63
@@ -93018,6 +93030,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isClosed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3094130790460216079, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -66302,6 +66302,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isClosed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1742159178151040308, guid: e58aaeb8c15ffb14f8ad97241a118816, type: 3}
       propertyPath: playerGrabKey
       value: 
       objectReference: {fileID: 1338050307}
