@@ -15,12 +15,12 @@ public class KeyDoor : Collidable
         // Verificar si el objeto con el que colisionó tiene el nombre "Player" y si la puerta está bloqueada
         if (col.name == "Player"){
             if(isLocked){
-                isClosed = true;
                 // Verificar si el jugador tiene una llave
-                if (playerGrabKey.HasKey()){
-                    isLocked = false; // Marcar la puerta como desbloqueada
+                if (playerGrabKey.HasKey() == true){
                     playerGrabKey.RemoveKey();
-                }else{
+                    isLocked = false; // Marcar la puerta como desbloqueada
+                    
+                }else if(playerGrabKey.HasKey() == false){
                     GameManager.instance.ShowText("The door is locked. You need a key!", 25, Color.white, transform.position + offset, Vector3.zero, 0.01f);// Imprimir un mensaje si la puerta está bloqueada y el jugador no tiene una llave
                 }
             }else{

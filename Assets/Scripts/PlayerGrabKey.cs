@@ -6,8 +6,8 @@ public class PlayerGrabKey : MonoBehaviour
 {
     private int keys;
 
-    private void Awake(){
-        keys = 0;
+    public void Awake(){
+        
     }
 
     public void AddKey(){
@@ -16,8 +16,9 @@ public class PlayerGrabKey : MonoBehaviour
     }
 
     public void RemoveKey(){
-        if(keys >= 0){
+        if(keys > 0){
             keys--;
+            Debug.Log(keys);
         }       
     }
 
