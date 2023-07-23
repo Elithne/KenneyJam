@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2 : Collidable
+public class Level3 : Collidable
 {
-    public void Level_2() 
+    public void Level_3() 
     {
         
     }
@@ -15,7 +15,7 @@ public class Level2 : Collidable
         // Verificar si el objeto con el que colisionó tiene el nombre "Player" y si la puerta está bloqueada
         if (col.name == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Level3");
         }
      }
 }
