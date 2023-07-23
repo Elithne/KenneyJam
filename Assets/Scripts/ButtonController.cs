@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour
     
     public void StartGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Tuto");
     }
 
     public void Information()
