@@ -9,15 +9,19 @@ public class Door : MonoBehaviour
     private AudioSource audioSource; // Referencia al componente AudioSource de la puerta.
 
     public void Open(){
-        Invoke("PlaySound", 3);
-        gameObject.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(openSound);
+        StartCoroutine(DisableAfterSound());
         
     }
 
-    public void PlaySound()
-    {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(openSound);
+    private IEnumerator DisableAfterSound()
+        {
+        // Esperar un tiempo determinado después de reproducir el sonido
+        yield return new WaitForSeconds(openSound.length);
+
+        // Desactivar la puerta después del tiempo de espera
+        gameObject.SetActive(false);
     }
 
     public void Close(){
