@@ -12,8 +12,14 @@ public class GameManager : MonoBehaviour
     public List<Sprite> playerSprites;
     public Player player;
     public FloatingTextManager floatingTextManager;
+    public int currentLives;
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
+
+    public void Update(){
+        currentLives = player.GetLives();
+        Debug.Log(currentLives);
     }
 }

@@ -10,12 +10,16 @@ public class Player : Mover
         float x = Input.GetAxisRaw("Horizontal"); 
         float y = Input.GetAxisRaw("Vertical");  
 
-        UpdateMotor(new Vector3(x, y, 0));          
+        UpdateMotor(new Vector3(x, y, 0));
+
+    
+                  
     }
 //Con esto pasamos el nombre de la escena a texto
     private string currentScene;
 
     protected override void Death(){
+
         currentScene = SceneManager.GetActiveScene().name; // Almacenamos el nombre de la escena actual
         SceneManager.LoadScene(currentScene);//Cargamos la escena actual cuando muere
         //SceneManager.LoadScene("Level1");

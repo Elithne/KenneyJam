@@ -32,6 +32,10 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    public int GetLives(){
+        return hitpoint;
+    }
+
     protected virtual void Death(){
         //Debug.Log("dead");
     }
