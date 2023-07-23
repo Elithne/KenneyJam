@@ -15,6 +15,7 @@ public class Chest : Collectable
 
     protected override void OnCollect()
     {
+        audioSource = GetComponent<AudioSource>();
         // Verificar si se presionó la tecla F y el cofre aún no ha sido recogido
         if (Input.GetKeyDown(KeyCode.F) && !collected)
         {
