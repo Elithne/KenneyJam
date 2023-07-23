@@ -6,7 +6,6 @@ public class Chest : Collectable
 {
     public Sprite openChest; // Sprite que se mostrará cuando el cofre esté abierto
     public PlayerGrabKey playerGrabKey; // Referencia al componente PlayerGrabKey del jugador
-    public int coins = 5; // Cantidad de monedas que contiene el cofre
     private Vector3 chestOffset = new Vector3(0, 0.7f, 0);
 
     protected override void OnCollect()
