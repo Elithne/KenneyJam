@@ -1,12 +1,17 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+
+
 
 public class Chest : Collectable
 {
     public Sprite openChest; // Sprite que se mostrará cuando el cofre esté abierto
     public PlayerGrabKey playerGrabKey; // Referencia al componente PlayerGrabKey del jugador
     private Vector3 chestOffset = new Vector3(0, 0.7f, 0);
+    public AudioClip openSound; // Variable para almacenar el sonido de apertura del cofre.
+    private AudioSource audioSource; // Referencia al componente AudioSource del cofre.
+
 
     protected override void OnCollect()
     {
@@ -15,6 +20,8 @@ public class Chest : Collectable
         {
             // Cambiar el sprite del cofre al sprite de cofre abierto
             GetComponent<SpriteRenderer>().sprite = openChest;
+            // Reproducir el sonido de apertura del cofre
+            audioSource.PlayOneShot(openSound);
 
             // Llamar a la función addKey() del componente PlayerGrabKey del jugador para agregar una llave
             playerGrabKey.AddKey();

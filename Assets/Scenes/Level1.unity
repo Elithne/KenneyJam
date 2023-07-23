@@ -672,6 +672,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6590981174738770527, guid: ba109ff4e77a1314292991692367003f, type: 3}
+      propertyPath: openSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 69884e847bfd92042870d9ecaf0f44ac, type: 3}
+    - target: {fileID: 6590981174738770527, guid: ba109ff4e77a1314292991692367003f, type: 3}
       propertyPath: playerGrabKey
       value: 
       objectReference: {fileID: 1338050307}
