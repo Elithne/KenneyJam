@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-
 public class Chest : Collectable
 {
     public Sprite openChest; // Sprite que se mostrará cuando el cofre esté abierto
@@ -21,14 +20,13 @@ public class Chest : Collectable
         {
             // Cambiar el sprite del cofre al sprite de cofre abierto
             GetComponent<SpriteRenderer>().sprite = openChest;
-            // Reproducir el sonido de apertura del cofre
-            audioSource.PlayOneShot(openSound);
-
             // Llamar a la función addKey() del componente PlayerGrabKey del jugador para agregar una llave
             playerGrabKey.AddKey();
             GameManager.instance.ShowText("Key obtained!", 25, Color.yellow, transform.position + chestOffset, Vector3.up * 50, 1.5f);
-
             collected = true; // Marcar el cofre como recogido para que no pueda ser recogido nuevamente
+
+            // Reproducir el sonido de apertura del cofre
+            audioSource.PlayOneShot(openSound);        
         }
     }
 }
