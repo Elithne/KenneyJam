@@ -263,7 +263,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573095311}
   m_CullTransparentMesh: 1
---- !u!1 &1066320379
+--- !u!1 &1072866067
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,9 +271,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1066320380}
-  - component: {fileID: 1066320382}
-  - component: {fileID: 1066320381}
+  - component: {fileID: 1072866068}
+  - component: {fileID: 1072866070}
+  - component: {fileID: 1072866069}
   m_Layer: 5
   m_Name: Fondo
   m_TagString: Untagged
@@ -281,32 +281,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1066320380
+--- !u!224 &1072866068
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066320379}
+  m_GameObject: {fileID: 1072866067}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.51335, y: 0.51335, z: 0.51335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121245204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.21862793, y: 0.00390625}
-  m_SizeDelta: {x: 2036.7007, y: 1034.9}
+  m_AnchoredPosition: {x: -5, y: -4}
+  m_SizeDelta: {x: 1204.5886, y: 612.0824}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1066320381
+--- !u!114 &1072866069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066320379}
+  m_GameObject: {fileID: 1072866067}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -330,13 +330,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1066320382
+--- !u!222 &1072866070
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066320379}
+  m_GameObject: {fileID: 1072866067}
   m_CullTransparentMesh: 1
 --- !u!1 &1086409357
 GameObject:
@@ -509,7 +509,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1066320380}
+  - {fileID: 1072866068}
   - {fileID: 1828324595}
   - {fileID: 1086409358}
   m_Father: {fileID: 0}
